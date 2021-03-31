@@ -8,7 +8,8 @@
 class Product < Entity
   attr_accessor :name, :price, :description, :created_at
 
-  def initialize(name: nil, price: nil, description: nil, created_at: Time.now)
+  def initialize(id: nil, name: nil, price: nil, description: nil, created_at: Time.now)
+    @id = id
     @name = name
     @price = price
     @description = description
