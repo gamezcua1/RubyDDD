@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
-class ProductCollection
+# Product queries
+class BookCollection
   class << self
     def collection
       @collection ||= MongoClient.instance.client[:products]
@@ -8,6 +9,10 @@ class ProductCollection
 
     def find(id)
       collection.find(_id: BSON::ObjectId(id))
+    end
+
+    def all
+      collection.find
     end
   end
 end
