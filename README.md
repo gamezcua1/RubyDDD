@@ -2,8 +2,15 @@
 
 This project is an API following Domain Driven Design
 
+## Tech stack
+
+- MongoDB
+- Ruby
+- Sinatra
+
 ## Features
 - ✅ Get book
+- ✅ Get books
 - ❌ Find book
 - ❌ Create book
 - ❌ Get Authors
@@ -23,8 +30,3 @@ This project is an API following Domain Driven Design
 - ❌ Book collections
 - ❌ Create Authors
 
-## Tech stack
-
-- MongoDB
-- Ruby
-- Sinatra
